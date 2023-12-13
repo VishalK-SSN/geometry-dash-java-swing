@@ -16,7 +16,7 @@ public class GameStateManager implements KeyListener, MouseListener{
 	private GameState currentGameState;
 	
 	public GameStateManager() {
-		
+		this.setState(MENU_STATE);
 	}
 	
 	public void update() {
@@ -29,7 +29,9 @@ public class GameStateManager implements KeyListener, MouseListener{
 	
 	public void setState(String state) {
 		currentState = state;
-		// Change current game state
+		if(currentState.equals(GameStateManager.MENU_STATE)) {
+			currentGameState = new MenuState();
+		}
 	}
 	
 	public String getState() {

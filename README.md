@@ -13,3 +13,7 @@
 3. Created package gameState
     1. Created interface GameState
     2. Created class GameStateManager
+    3. Created MenuState
+4. Changes to GameWindow
+    1. Added Event handling
+    2. Added game loop using timer
