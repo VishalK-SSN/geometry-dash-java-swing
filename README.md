@@ -10,3 +10,6 @@
 2. Created Package game
     1. Create class Game
     2. Create class GameWindow
+3. Created package gameState
+    1. Created interface GameState
+    2. Created class GameStateManager
